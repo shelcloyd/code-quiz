@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-size: 40px;
+    color: rgb(0, 225, 255);
+}
+
+.top-bar a {
+    color: rgb(0, 225, 255);
+    text-decoration: none;
+}
+
+.top-bar a:hover {
+    color: rgb(190, 250, 255);
+    text-decoration: none;
+}
+
+.top-bar a:active {
+    color: rgb(0, 110, 120);
+    text-decoration: none;
+}
+
+.inner-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(18, 18, 18);
+    border-radius: 25px;
+    background-color: rgb(18, 18, 18);
+    margin: 10% 25% 10% 25%;
+    height: 400px;
+    color: white;
+    box-shadow: 0 0 50px white;
+}
+
+.inner-container header {
+    font-size: 40px;
+    padding: 10px;
+    background-color: rgb(18, 18, 18);
+}
+
+.inner-container p {
+    font-size: 25px;
+    background-color: rgb(18, 18, 18);
+}
+.inner-container button {
+    padding: 25px;
+    background-color: rgb(18, 18, 18);
+    border: none;
+}
+
+.inner-container button a {
+    font-size: 50px;
+    color: rgb(0, 225, 255);
+    text-decoration: none;
+    
+}
+
+.inner-container button a:hover {
+    color: rgb(190, 250, 255);
+    text-decoration: none;
+}
+
+.inner-container button a:active {
+    color: rgb(0, 110, 120);
+    text-decoration: none;
+}
