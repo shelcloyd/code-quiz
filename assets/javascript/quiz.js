@@ -28,18 +28,17 @@ function startTimer() {
         time.innerHTML = sec;
     }
         if (sec < 0) {
-            setTimeout();
+            clearInterval(timer);
+            window.location.href = '../../gratz.html';
+            localStorage.setItem("score", JSON.stringify(score));
+            let retrievedScore = localStorage.getItem("score");
+            retrievedScore.push("gratz.js");
         }
     }, 1000);
 }
-// when time runs out
-setTimeout(function () {
-    window.location.href = '../../gratz.html';
-
-}, 60000);
 //  when question is answered incorrectly
 function subTime() {
-    sec -= 5;
+    sec -= 15;
     document.getElementById("countdown").innerHTML = sec;
 };
 startTimer();
@@ -70,9 +69,20 @@ document.getElementById("submit").onclick = function () {
     newQuestion(increment);
     if (increment >= 4) {
         window.location.href = '../../gratz.html';
-
+        localStorage.setItem("score", JSON.stringify(score));
+        let retrievedScore = localStorage.getItem("score");
+        retrievedScore.push("gratz.js");
     }
 }
 }
 newQuestion(increment);
 
+function displayPoints (num) {
+    console.log(score)
+    let myPoints = document.getElementById("points")
+    if (typeof(myPoints) != 'undefined' && myPoints != null)
+    {
+        myPoints.innerText = score
+        console.log(myPoints.innerText)
+    } 
+}
