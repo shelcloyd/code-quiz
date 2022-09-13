@@ -27,3 +27,7 @@ ___
 ___
 ![Tux, the Linux mascot](/assets/images/Screenshot%20(19).png)
 ___
+>## Links
+
+* URL to github: https://github.com/shelcloyd/code-quiz.git
+* URL to live app: https://shelcloyd.github.io/code-quiz/
