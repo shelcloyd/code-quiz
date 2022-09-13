@@ -30,9 +30,6 @@ function startTimer() {
         if (sec < 0) {
             clearInterval(timer);
             window.location.href = '../../gratz.html';
-            localStorage.setItem("score", JSON.stringify(score));
-            let retrievedScore = localStorage.getItem("score");
-            retrievedScore.push("gratz.js");
         }
     }, 1000);
 }
@@ -69,9 +66,6 @@ document.getElementById("submit").onclick = function () {
     newQuestion(increment);
     if (increment >= 4) {
         window.location.href = '../../gratz.html';
-        localStorage.setItem("score", JSON.stringify(score));
-        let retrievedScore = localStorage.getItem("score");
-        retrievedScore.push("gratz.js");
     }
 }
 }
